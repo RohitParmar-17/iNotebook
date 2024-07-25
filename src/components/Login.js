@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 
 const Login = (props) => {
+    const host = "https://inotebook-yi2n.onrender.com";
     const [credentials,setCredentials] = useState({email:"" , password:""})
     let navigate = useNavigate();
     const onChange = (e) =>{
@@ -11,7 +12,7 @@ const Login = (props) => {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         // Api Call
-        const response = await fetch('http://localhost:5000/api/auth/login', {
+        const response = await fetch(`${host}/api/auth/login`, {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
