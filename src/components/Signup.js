@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Signup = (props) => {
   const apiUrl = process.env.REACT_APP_API_URL;
     let navigate = useNavigate();
+    const host = "https://inotebook-yi2n.onrender.com";
     const [credentials,setCredentials] = useState({name:"",email:"" , password:"", cpassword:""})
     const onChange = (e) =>{
         setCredentials({...credentials,[e.target.name]:e.target.value})
@@ -13,7 +14,11 @@ const Signup = (props) => {
         e.preventDefault();
         // Api Call
         const {name,email,password} = credentials;
+<<<<<<< HEAD
         const response = await fetch(`${apiUrl}/api/auth/createuser`, {
+=======
+        const response = await fetch(`${host}/api/auth/createuser`, {
+>>>>>>> 858098a618459fc9beb33b2d6c3b8e6c2f896b65
             method: "POST",
             headers: {
             "Content-Type": "application/json",
