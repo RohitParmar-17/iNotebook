@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
+import styles from './Signup.module.css';
 
 const Login = (props) => {
     const apiUrl = process.env.REACT_APP_API_URL;
@@ -32,20 +33,26 @@ const Login = (props) => {
         }
     }
   return (
-    <div className='mt-3'>
-        <h2 className='text-center'>Login to continue to iNotebook</h2>
+    // <div className='mt-3 '>
+    <div className={`${styles.container}`}>
+        <div className={styles.formContainer}>
+        <h2 className='text-center'>Login to continue</h2>
         <form onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="email" name="email" value={credentials.email} onChange={onChange} aria-describedby="emailHelp"/>
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <input type="email" className="form-control" id="email" name="email" value={credentials.email} onChange={onChange} aria-describedby="emailHelp" placeholder='Enter your email'/>
+                <div id="emailHelp" className={`form-text ${styles.formTextWhite}`}>We'll never share your email with anyone else.</div>
             </div>
             <div className="mb-3">
                 <label htmlFor="password" className="form-label">Password</label>
-                <input type="password" className="form-control" id="password" name='password' onChange={onChange} value={credentials.password}/>
+                <input type="password" className="form-control" id="password" name='password' onChange={onChange} value={credentials.password} placeholder='Enter your password'/>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            {/* <button type="submit" className="btn btn-primary">Submit</button> */}
+            <div className="d-flex justify-content-center mt-3">
+                <button type="submit" className="btn btn-primary">Submit</button>
+            </div>
         </form>
+        </div>
     </div>
   
   )

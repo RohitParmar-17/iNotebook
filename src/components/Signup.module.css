@@ -1,0 +1,70 @@
+
+.container {
+    background-image: url('https://plus.unsplash.com/premium_photo-1683309567810-4d232ee83d2f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bm90ZXN8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 1536px;
+    height: 639px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    margin-left: -120px;
+    }
+
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+
+.formContainer {
+    background: rgba(70, 66, 66, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white; 
+    width: 400px; 
+}
+
+.formTextWhite {
+    color: white;  
+  }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .container {
+        margin-left: -12px;  /* Remove left margin for smaller screens */
+        margin-top: -50px;   /* Remove top margin for smaller screens */
+        padding: 44px;   /* Add padding to prevent content from touching edges */
+        width: 430px;
+        height: 879px;
+    }
+
+    .formContainer {
+        width: 100%;    /* Make the form container take full width on smaller screens */
+        max-width: 90%; /* Limit the width on smaller screens */
+    }
+
+    /* Optional: Adjust text size for smaller screens */
+    .form-label {
+        font-size: 14px; 
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px; /* Adjust button size */
+    }
+}
+
+
