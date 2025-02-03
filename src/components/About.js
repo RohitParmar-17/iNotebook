@@ -3,7 +3,7 @@
 const About = () => {
   return (
     <div>
-      This is about page
+      This is App created by Rohit Parmar
     </div>
   )
 }

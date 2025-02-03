@@ -61,11 +61,6 @@ const NoteState = (props) => {
     setNotes(newNotes);
   };
 
-
-
-
-
-
   // Edit a note
   const editNote = async (id, title, description, tag) => {
     // Api Call
