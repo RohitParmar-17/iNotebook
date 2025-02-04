@@ -56,7 +56,7 @@
         margin-top: -50px;   /* Remove top margin for smaller screens */
         padding: 15px;   /* Add padding to prevent content from touching edges */
         width: 100%;
-        height: 100%;
+        height: 92%;
     }
 
     .formContainer {
