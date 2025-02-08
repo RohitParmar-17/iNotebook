@@ -72,4 +72,4 @@ const AddNote = (props) => {
   );
 };
 
-export default AddNote;
+export default AddNote; 

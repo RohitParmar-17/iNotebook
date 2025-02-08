@@ -120,7 +120,7 @@ const Notes = (props) => {
                   />
                 </div>
 
-                <button
+                <button 
                   type="submit"
                   className="btn btn-primary d-none"
                   onClick={handleClick}
