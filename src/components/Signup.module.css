@@ -1,5 +1,6 @@
 
 .container {
+    /* background-image: url('https://www.wikihow.com/images/thumb/1/18/Take-Better-Notes-Step-1-Version-2.jpg/v4-460px-Take-Better-Notes-Step-1-Version-2.jpg.webp'); */
     background-image: url('https://plus.unsplash.com/premium_photo-1683309567810-4d232ee83d2f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bm90ZXN8ZW58MHx8MHx8fDA%3D');
     background-size: cover;
     background-position: center;
@@ -26,7 +27,6 @@
 
 .navbarN {
     position: relative;
-    /* position: absolute; */
     height: 10%;
     width: 100%;
     z-index: 10;

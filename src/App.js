@@ -25,6 +25,7 @@ function App() {
   }
   return (
     <div>
+     {/* <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}> */}
       <NoteState>
       <Navbar/>
       <Alert alert={alert} />
