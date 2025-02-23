@@ -6,6 +6,18 @@ iNotebook is a secure and efficient note management web application built using 
 ## Screenshots
 Here are some screenshots of the iNotebook application:
 
+### Signup
+<img src="https://github.com/RohitParmar-17/iNotebook/blob/master/screenshots/signup.png" alt="Home Page" width="100%">
+
+### Login
+<img src="https://github.com/RohitParmar-17/iNotebook/blob/master/screenshots/login.png" alt="Home Page" width="100%">
+
+### Add Note
+<img src="https://github.com/RohitParmar-17/iNotebook/blob/master/screenshots/addNote.png" alt="Home Page" width="100%">
+
+### Edit Note
+<img src="https://github.com/RohitParmar-17/iNotebook/blob/master/screenshots/editNote.png" alt="Home Page" width="100%">
+
 ## Features
 - **User Authentication**: Secure login and signup functionality.
 - **CRUD Operations**: Users can create, read, update, and delete notes easily.
